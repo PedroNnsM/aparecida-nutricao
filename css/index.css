@@ -119,7 +119,7 @@ button:active{
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
+button[disabled=disabled], button:disabled{ 
     background-color: gray;
 	border-color: darkgray;
 
