@@ -24,10 +24,14 @@ botaoAdicionar.addEventListener("click", function(event) {
     tabela.appendChild(pacienteTr);
 
     form.reset();
+    var ul = document.querySelector("#msgs-erro");
+    ul.innerHTML = "";
 } );
 
 function exibeMensagensDeErro(erros) {
     var ul = document.querySelector("#msgs-erro");
+    ul.innerHTML = "";
+
     erros.forEach(function(erro) {
         var li = document.createElement("li");
         li.textContent = erro;
@@ -87,7 +91,7 @@ function validaPaciente(paciente){
     if (paciente.gordura.length == 0) {
         erros.push("A gordura não pode ser em branco");
     }
-    
+
     if (paciente.peso.length == 0) {
         erros.push("O peso não pode ser em branco");
     }
