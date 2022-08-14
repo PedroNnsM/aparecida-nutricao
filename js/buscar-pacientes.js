@@ -1,3 +1,4 @@
+
 var botaoAdicionar = document.querySelector("#buscar-pacientes");
 
 botaoAdicionar.addEventListener("click", function(){
@@ -24,4 +25,3 @@ botaoAdicionar.addEventListener("click", function(){
 
     xhr.send();
 });
-
